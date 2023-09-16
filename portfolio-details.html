@@ -37,6 +37,32 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+    <style>
+
+      h6{
+        color: aqua;
+      }
+
+    @media (min-width: 0px) and (max-width: 500px) {
+  video{
+      width: 400px;
+  }
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+  video{
+      width: 550px;
+  }
+  }
+
+  @media (min-width: 900px)  {
+  video{
+      width: 550px;
+  }
+  }
+
+  </style>
   </head>
 
   <body>
@@ -104,29 +130,16 @@
                     and
                     defeat obstacles to rescue his missing friend. Here are
                     some
-                    
-                    <video id="my-video2" width="500" height="400">
+                   <hr>
+                  
+                    <h6>Trailer Video:</h6>
+                    <video id="my-video2" controls="" >
                       <!-- Video kaynağı -->
                       <source src="FinalTutorial.mp4" type="video/mp4">
                     </video>
-                    <button id="toggle-video">Play Video</button>
+                   
 
-                    <script>
-                        // Video ve düğme elementlerini alın
-                        var video = document.getElementById("my-video2");
-                        var toggleButton = document.getElementById("toggle-video");
-                
-                        // Düğmeye tıklandığında videoyu açıp kapatın
-                        toggleButton.addEventListener("click", function() {
-                            if (video.paused) {
-                                video.play(); // Videoyu aç
-                                toggleButton.textContent = "Pause  Video"; // Düğme metnini değiştir
-                            } else {
-                                video.pause(); // Videoyu kapat
-                                toggleButton.textContent = "Play Video"; // Düğme metnini değiştir
-                            }
-                        });
-                    </script>
+                    
 
                   </p>
                 </div>

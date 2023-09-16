@@ -46,6 +46,46 @@
       width: 700px;
       height: 500px;
     }
+
+   
+    @media (min-width: 0px) and (max-width: 500px) {
+  img{
+      width: 400px;
+  }
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+  img{
+      width: 550px;
+  }
+  }
+
+  @media (min-width: 900px)  {
+  img{
+      width: 550px;
+  }
+  }
+  
+    @media (min-width: 0px) and (max-width: 500px) {
+  video{
+      width: 400px;
+  }
+  }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+  video{
+      width: 550px;
+  }
+  }
+
+  @media (min-width: 900px)  {
+  video{
+      width: 550px;
+  }
+  }
+
+
+ 
   </style>
   </head>
 
@@ -97,29 +137,13 @@
                 talents and developed my own personal website. This website is a
                 digital portfolio and identity that I created using my basic
                 knowledge of HTML and CSS.
-
-                <video id="my-video2" width="500" height="400">
+                <hr>
+                
+                 <h6>Development Process:</h6>
+                <video id="my-video2" controls>
                   <!-- Video kaynağı -->
                   <source src="MyWebSite.mp4" type="video/mp4">
                 </video>
-                <button id="toggle-video">Play Video</button>
-
-                <script>
-                      // Video ve düğme elementlerini alın
-                      var video = document.getElementById("my-video2");
-                      var toggleButton = document.getElementById("toggle-video");
-              
-                      // Düğmeye tıklandığında videoyu açıp kapatın
-                      toggleButton.addEventListener("click", function() {
-                          if (video.paused) {
-                              video.play(); // Videoyu aç
-                              toggleButton.textContent = "Pause  Video"; // Düğme metnini değiştir
-                          } else {
-                              video.pause(); // Videoyu kapat
-                              toggleButton.textContent = "Play Video"; // Düğme metnini değiştir
-                          }
-                      });
-                  </script>
 
               </p>
             </div>
