@@ -29,9 +29,16 @@ body::before {
   z-index: -1;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 0px) {
   body::before {
-    background-attachment:fixed;
+    background-attachment: fixed;
+    background-size: auto;
+  }
+}
+@media (min-width: 600px) {
+  body::before {
+    background-attachment: fixed;
+    background-size: cover;
   }
 }
 
@@ -800,7 +807,6 @@ section .container {
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
